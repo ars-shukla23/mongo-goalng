@@ -1,6 +1,6 @@
 package controllers
 
-import(
+import (
 	"fmt"
 	"encoding/json"
 	"github.com/julienschmidt/httprouter"
@@ -71,6 +71,6 @@ func (uc UserController) DeleteUser(w http.ResponseWriter, r *http.Request, p ht
 	}
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprintf(w,"Deleted user %s\n",oid)
-	
+
 	
 }
